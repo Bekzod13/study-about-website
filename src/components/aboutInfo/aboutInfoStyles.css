@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+}
+
+.about-info{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about-info.active{
+    width: 100%;
+    margin-top: 0;
+}
+
+.about-info-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-info-header{
+    text-align: center;
+    font-family: "Poppins" sans-serif;
+    color: #121227;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.about-info-description,
+.about-info-tel{
+    font-family: "Poppins" sans-serif;
+    color: #121227;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.aboutInfoImg{
+    width: 100%;
+    margin-bottom: 50px;
+    border: 1px solid #121227;
+}
+.aboutInfoImg.active{
+    border:none;
+}
+
+.aboutInfoImg,
+.about-info.active .about-info-container .about-info-header{
+    margin: 0;
+}
+
+.aboutInfoImg{
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .about-info-description,
+    .about-info-tel{
+        margin: 0 10px;
+    }
+    .about-info-header{
+        font-size: 30px;
+    }
+    .about-info-description,
+    .about-info-tel{
+        font-size: 14px;
+    }
+}
